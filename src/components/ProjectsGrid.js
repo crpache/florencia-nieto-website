@@ -62,8 +62,7 @@ const ProjectsGrid = () => {
       allMarkdownRemark {
         nodes {
           frontmatter {
-            imageGallery
-            isLanding
+            cover
             title
           }
         }
@@ -71,10 +70,10 @@ const ProjectsGrid = () => {
     }
   `)
 
-  const projectsData = data.allMarkdownRemark.nodes.filter(project => project.frontmatter.imageGallery)
+  const projectsData = data.allMarkdownRemark.nodes.filter(project => project.frontmatter.cover)
 
   const projects = projectsData.map(project => ({
-    img: project.frontmatter.imageGallery[0],
+    img: project.frontmatter.cover,
     title: project.frontmatter.title
   }))
 
