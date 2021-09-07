@@ -39,6 +39,11 @@ collections:
           widget: "boolean",
           default: false,
         }
+      - { 
+          label: "Imagen de portada", 
+          name: 'cover', 
+          widget: "image" 
+        }
       - name: imageGallery
         label: ImageGallery
         widget: "image"

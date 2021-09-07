@@ -1,5 +1,6 @@
 import React from 'react'
+import ProjectsGrid from '../components/ProjectsGrid'
 
-const Index = () => <h1>HOLA</h1>
+const Index = () => <ProjectsGrid />
 
 export default Index
