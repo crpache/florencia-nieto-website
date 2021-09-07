@@ -31,7 +31,6 @@ collections:
           default: "project",
         }
       - { label: "Title", name: "title", widget: "string" }
-      -
       - { label: "Date", name: "date", widget: "date" }
       - { label: "Description", name: "description", widget: "text" }
       - {
