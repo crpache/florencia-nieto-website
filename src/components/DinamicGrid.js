@@ -57,7 +57,7 @@ const Image = styled.img`
   object-fit: cover;
 `
 
-const DinamicGrid = ({ items = [] }) => {
+const DinamicGrid = ({ items = [], onClick = () => null }) => {
   const projectsGroup = _.chunk(items, 8)
   return (
     <Wrapper id="projects">
@@ -65,7 +65,7 @@ const DinamicGrid = ({ items = [] }) => {
         <Grid images={group.lenght}>
           {group.map((project, index) => (
             <ImageWrapper to={project.slug} index={index} key={id()}>
-              <Image src={project.img} alt={project.title} />
+              <Image src={project.img} alt={project.title} onClick={onClick}/>
             </ImageWrapper>
           ))}
         </Grid>

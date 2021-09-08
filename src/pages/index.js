@@ -4,10 +4,11 @@ import { Link } from 'gatsby'
 import DinamicGrid from '../components/DinamicGrid'
 import Layout from '../components/Layout'
 import Projects from '../pages/projects'
+import Hero from '../components/Hero'
 
 const Index = () => (
   <Layout>
-    <Link to='projects'>PROJECTS</Link>
+    <Hero />
     <Projects />
   </Layout>
 )

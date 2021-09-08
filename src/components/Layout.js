@@ -2,6 +2,7 @@ import React from 'react'
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { theme } from '../style/theme'
 import Navbar from './Navbar/Navbar';
+import { breakpoints } from '../style/theme';
 //import Footer from '../components/Footer'
 
 const GlobalStyles = createGlobalStyle`
@@ -41,6 +42,9 @@ const Main = styled.main`
   flex: 1;
   align-items: center;
   margin-top: 150px;
+  @media (max-width: ${breakpoints.mobile}px) {
+    margin-top: 0;
+  }
 `
 
 const Layout = ({ children }) => (

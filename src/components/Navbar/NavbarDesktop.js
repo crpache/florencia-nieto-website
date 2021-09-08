@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-//import { StaticImage } from "gatsby-plugin-image";
 import { useStickyNavbar } from '../../utils/hooks'
 import styled from 'styled-components'
 import { v4 as id } from 'uuid'
+import LogoImg from '../../img/logo-navbar.png'
 
 const NavbarWrapper = styled.nav`
   display: flex;
@@ -45,9 +45,9 @@ const NavbarDesktop = ({ items }) => {
   return (
     <NavbarWrapper id={navbarId}>
       <img 
-        src="/img/logo-dorado-2.png"
+        src={LogoImg}
+        height={100}
         alt="logo"
-        className="logo"
       />
       {items.map(item => (
         <NavItem to={item.to} key={id()}>
