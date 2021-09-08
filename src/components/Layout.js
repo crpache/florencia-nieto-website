@@ -1,58 +1,59 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import './all.sass'
-import useSiteMetadata from './SiteMetadata'
-import { withPrefix } from 'gatsby'
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { theme } from '../style/theme'
+/* import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer' */
 
-const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata()
-  return (
-    <div>
-      <Helmet>
-        <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+const GlobalStyles = createGlobalStyle`
+  html {
+    scroll-behavior: smooth;
+  }
+ 
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: ${({ theme }) => theme.font};
+    box-sizing: border-box;
+  }
+  h1 {
+    @media ${props => props.theme.device.laptop} {
+      font-size: 36px;
+    }
+    @media ${props => props.theme.device.mobile} {
+      font-size: 20px;
+    }
+    @media ${props => props.theme.device.mobile} {
+      font-size: 24px;
+    }
+  }
+`;
 
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href={`${withPrefix('/')}img/apple-touch-icon.png`}
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href={`${withPrefix('/')}img/favicon-32x32.png`}
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href={`${withPrefix('/')}img/favicon-16x16.png`}
-          sizes="16x16"
-        />
+const LayoutWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
 
-        <link
-          rel="mask-icon"
-          href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
-          color="#ff4400"
-        />
-        <meta name="theme-color" content="#fff" />
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  margin-top: 150px;
+`
 
-        <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
-        <meta
-          property="og:image"
-          content={`${withPrefix('/')}img/og-image.jpg`}
-        />
-      </Helmet>
-      <Navbar />
-      <div>{children}</div>
-      <Footer />
-    </div>
-  )
-}
+const Layout = ({ children }) => (
+  <ThemeProvider theme={theme}>
+    <LayoutWrapper>
+      <GlobalStyles />
+      {/* <Navbar /> */}
+      <Main>
+        {children}
+      </Main>
+      {/* <Footer /> */}
+    </LayoutWrapper>
+  </ThemeProvider>
+);
 
-export default TemplateWrapper
+export default Layout
