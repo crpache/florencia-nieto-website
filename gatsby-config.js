@@ -1,8 +1,34 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
-    description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+    title: 'Flor Nieto Website',
+    description: 'Flor Nieto Interior Design Website',
+    author: "southpress",
+    navbarLinks: [
+      {
+        label: 'Home',
+        to: '/'
+      },
+      {
+        label: 'Proyectos',
+        to: '/#proyects'
+      },
+      {
+        label: 'Servicios',
+        to: '/#services'
+      },
+      {
+        label: 'Prensa',
+        to: '/prensa'
+      },
+      {
+        label: 'Contacto',
+        to: '/#contact-form'
+      },
+      {
+        label: 'Sobre mi',
+        to: '/about'
+      }
+    ]
   },
   plugins: [
     'gatsby-plugin-react-helmet',

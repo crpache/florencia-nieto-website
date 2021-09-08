@@ -7,7 +7,7 @@ import Projects from '../pages/projects'
 
 const Index = () => (
   <Layout>
-    {/* <Link to='projects'>PROJECTS</Link> */}
+    <Link to='projects'>PROJECTS</Link>
     <Projects />
   </Layout>
 )

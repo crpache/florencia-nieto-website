@@ -57,9 +57,8 @@ const Image = styled.img`
   object-fit: cover;
 `
 
-const DinamicGrid = ({ projects = [] }) => {
-  const projectsGroup = _.chunk(projects, 8)
-
+const DinamicGrid = ({ items = [] }) => {
+  const projectsGroup = _.chunk(items, 8)
   return (
     <Wrapper id="projects">
       {projectsGroup.map((group) => (

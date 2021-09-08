@@ -45,7 +45,7 @@ const Projects = () => {
         <Title> Proyectos </Title>
       </TitleWrapper>
       <GridWrapper>
-        <DinamicGrid projects={projects}/>
+        <DinamicGrid items={projects}/>
       </GridWrapper>
     </>
   )
