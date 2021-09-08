@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link, graphql, useStaticQuery } from "gatsby"
-//import Layout from "../components/Layout";
-//import { Link } from "gatsby";
-//import { StaticImage } from "gatsby-plugin-image";
-//import { breakpoints } from "../style/theme";
+import { graphql, useStaticQuery } from "gatsby"
 import DinamicGrid from "../components/DinamicGrid";
 import Title from "../components/Title";
 
@@ -24,8 +20,11 @@ const Projects = () => {
       allMarkdownRemark {
         nodes {
           frontmatter {
-            cover
             title
+            cover
+          }
+          fields {
+            slug
           }
         }
       }
@@ -34,14 +33,11 @@ const Projects = () => {
 
   const projectsData = data.allMarkdownRemark.nodes.filter(project => project.frontmatter.cover)
 
-  const base = projectsData.map(project => ({
+  const projects = projectsData.map(project => ({
     img: project.frontmatter.cover,
-    title: project.frontmatter.title
+    title: project.frontmatter.title,
+    slug: project.fields.slug
   }))
-
-  base.length = 8
-
-  const allProjects = [...base, ...base, ...base, ...base, ...base] 
 
   return (
     <>
@@ -49,7 +45,7 @@ const Projects = () => {
         <Title> Proyectos </Title>
       </TitleWrapper>
       <GridWrapper>
-        <DinamicGrid projects={allProjects}/>
+        <DinamicGrid projects={projects}/>
       </GridWrapper>
     </>
   )

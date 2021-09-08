@@ -65,7 +65,7 @@ const DinamicGrid = ({ projects = [] }) => {
       {projectsGroup.map((group) => (
         <Grid images={group.lenght}>
           {group.map((project, index) => (
-            <ImageWrapper to='/test' index={index} key={id()}>
+            <ImageWrapper to={project.slug} index={index} key={id()}>
               <Image src={project.img} alt={project.title} />
             </ImageWrapper>
           ))}
