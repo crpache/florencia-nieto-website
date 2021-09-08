@@ -1,67 +1,67 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import { Link, graphql } from 'gatsby'
-
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Content, { HTMLContent } from '../components/Content'
 
-export const IndexPageTemplate = ({children}) => {
-  return(
-    <div> {children} </div>
+export const ProjectPageTemplate = ({ title, content, contentComponent }) => {
+  const PageContent = contentComponent || Content
+
+  return (
+    <section className="section section--gradient">
+      <div className="container">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="section">
+              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                {title}
+              </h2>
+              <PageContent className="content" content={content} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   )
-};
+}
 
-const IndexPage = () => {
+ProjectPageTemplate.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
+}
+
+const ProjectPage = ({ data }) => {
+  const { markdownRemark: post } = data
+
   return (
     <Layout>
-      <h1> I'm a index-page </h1>
+      <AboutPageTemplate
+        contentComponent={HTMLContent}
+        title={post.frontmatter.title}
+        content={post.html}
+      />
     </Layout>
   )
 }
 
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
+AboutPage.propTypes = {
+  data: PropTypes.object.isRequired,
 }
 
-export default IndexPage
+export default AboutPage
 
-// export const pageQuery = graphql`
-//   query IndexPageTemplate {
-//     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-//       frontmatter {
-//         title
-//         image {
-//           childImageSharp {
-//             fluid(maxWidth: 2048, quality: 100) {
-//               ...GatsbyImageSharpFluid
-//             }
-//           }
-//         }
-//         heading
-//         subheading
-//         mainpitch {
-//           title
-//           description
-//         }
-//         description
-//         intro {
-//           blurbs {
-//             image {
-//               childImageSharp {
-//                 fluid(maxWidth: 240, quality: 64) {
-//                   ...GatsbyImageSharpFluid
-//                 }
-//               }
-//             }
-//             text
-//           }
-//           heading
-//           description
-//         }
-//       }
-//     }
-//   }
-// `
+export const projectPageQuery = graphql`
+  query ProjectPage($slug: String!){
+    markdownRemark(fields: {slug: {eq: $slug}}) {
+      fields {
+        slug
+      }
+      frontmatter {
+        imageGallery
+        title
+        description
+      }
+    }
+  }
+`
