@@ -10,7 +10,7 @@ module.exports = {
       },
       {
         label: 'Proyectos',
-        to: '/#proyects'
+        to: '/#projects'
       },
       {
         label: 'Servicios',

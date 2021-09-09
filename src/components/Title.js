@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const TitleWrapper = styled.h3`
+  display: flex;
+  justify-content: center;
   color: ${(props) => props.theme.colors.secondary};
   font-size: 30px;
   font-weight: 100;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { graphql, useStaticQuery } from "gatsby"
 import DinamicGrid from "../components/DinamicGrid";
 import Title from "../components/Title";
+import Layout from "../components/Layout";
 
 const TitleWrapper = styled.div`
   display: flex;
@@ -40,14 +41,14 @@ const Projects = () => {
   }))
 
   return (
-    <>
+    <Layout>
       <TitleWrapper>
         <Title> Proyectos </Title>
       </TitleWrapper>
       <GridWrapper>
         <DinamicGrid items={projects}/>
       </GridWrapper>
-    </>
+    </Layout>
   )
 };
 
