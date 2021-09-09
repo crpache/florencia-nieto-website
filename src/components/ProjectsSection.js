@@ -44,7 +44,7 @@ const ProjectsSection = () => {
         <Title>Proyectos</Title>
       </TitleWrapper>
       <DinamicGrid items={items} />
-      <Button to='projects'>Ver más</Button>
+      <Button to='projects' size='l'>Ver más</Button>
     </Section>
   );
 };
