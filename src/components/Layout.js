@@ -3,7 +3,7 @@ import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { theme } from '../style/theme'
 import Navbar from './Navbar/Navbar';
 import { breakpoints } from '../style/theme';
-//import Footer from '../components/Footer'
+import Footer from './Footer'
 
 const GlobalStyles = createGlobalStyle`
   html {
@@ -55,7 +55,7 @@ const Layout = ({ children }) => (
       <Main>
         {children}
       </Main>
-      {/* <Footer /> */}
+      <Footer />
     </LayoutWrapper>
   </ThemeProvider>
 );
