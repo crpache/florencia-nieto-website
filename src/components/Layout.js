@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
   }
  
   body {
-    font-family: 'Bitter', Helvetica, sans-serif;
+    font-family: 'Montserrat', Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     color: ${({ theme }) => theme.font};

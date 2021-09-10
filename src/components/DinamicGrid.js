@@ -12,11 +12,18 @@ const Wrapper = styled.section`
   align-items: center;
 `
 
+const calcRows = (images) => {
+  if (images > 7) return 4
+  if (images > 5) return 3
+  if (images > 2) return 2
+  else return 1
+}
+
 const Grid = styled.div`
   display: grid;
   width: 100%;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: ${props => `repeat(${props.images}, 50vh)`};
+  grid-template-rows: ${props => `repeat(${calcRows(props.images)}, 33vh)`};
   grid-template-areas:
     "img0 img0 img1 img2"
     "img0 img0 img3 img4"
@@ -62,7 +69,7 @@ const DinamicGrid = ({ items = [], onClick = () => null }) => {
   return (
     <Wrapper id="projects">
       {projectsGroup.map((group) => (
-        <Grid images={group.lenght}>
+        <Grid images={group.length}>
           {group.map((project, index) => (
             <ImageWrapper to={project.slug} index={index} key={id()}>
               <Image src={project.img} alt={project.title} onClick={onClick}/>

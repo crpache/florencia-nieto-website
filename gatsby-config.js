@@ -39,6 +39,8 @@ module.exports = {
       options: {
         fonts: [
           `Bitter: 400, 700`,
+          `Montserrat: 100, 500, 600`,
+
         ],
         display: `swap`,
       },
