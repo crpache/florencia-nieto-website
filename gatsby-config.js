@@ -35,6 +35,15 @@ module.exports = {
     'gatsby-plugin-sass',
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Bitter: 400, 700`,
+        ],
+        display: `swap`,
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,

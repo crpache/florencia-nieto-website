@@ -6,12 +6,13 @@ import { breakpoints } from '../style/theme';
 import Footer from './Footer'
 
 const GlobalStyles = createGlobalStyle`
+  // @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&display=swap');
   html {
     scroll-behavior: smooth;
   }
  
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Bitter', Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     color: ${({ theme }) => theme.font};
