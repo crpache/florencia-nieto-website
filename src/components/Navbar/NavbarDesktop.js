@@ -22,7 +22,6 @@ const NavbarWrapper = styled.nav`
 `
 const NavItem = styled(Link)`
   color: ${({ theme }) => theme.colors.font};
-  //font-size: ${({ theme }) => theme.size.m};
   font-size: 20px;
   font-weight: 100;
   margin: 10px;
