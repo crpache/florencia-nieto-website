@@ -5,6 +5,8 @@ import { graphql } from "gatsby"
 import DinamicGrid from "../components/DinamicGrid"
 import NextIcon from '../icons/angle-right-solid.svg'
 import PrevIcon from '../icons/angle-left-solid.svg'
+import { breakpoints } from "../style/theme"
+import { useWindowSize } from "../utils/useIsDesktop"
 
 const ProjectTitle = styled.h1`
   color: ${({ theme }) => theme.colors.font};
@@ -12,12 +14,13 @@ const ProjectTitle = styled.h1`
 `
 const PageWrapper = styled.section`
   display: flex;
-  width: 70vw;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-`
+  @media (max-width: ${breakpoints.mobile}px) {
+    margin-top: 3rem;
+  }`
 
 const ProjectDescription = styled.article`
   color: ${({ theme }) => theme.colors.font};
@@ -29,7 +32,24 @@ const ProjectDescription = styled.article`
   font-style: italic;
 `
 
+const ProjectHeading = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+`
+
+const ProjectGrid = styled.div`
+  width: 70vw;
+  @media (max-width: ${breakpoints.mobile}px) {
+    width: 100vw;
+  }
+`
+
 const Template = ({ title, description, images }) => {
+  const { width } = useWindowSize();
+  const isMobile = width <= breakpoints.mobile
   const [isGalleryOpen, setGalleryOpen] = useState(false)
   const [currentImg, setCurrentImg] = useState(0)
 
@@ -42,11 +62,15 @@ const Template = ({ title, description, images }) => {
     <>
       {isGalleryOpen ? <ImageGallery images={images} currentImg={currentImg} closeGallery={() => setGalleryOpen(false)}/> : null}
       <PageWrapper>
-        <ProjectTitle>{title}</ProjectTitle>
-        <ProjectDescription>
-          {description}
-        </ProjectDescription>
-        <DinamicGrid items={images.map(img => ({img}))} onClick={handleGalleryOpen}/>
+        <ProjectHeading>
+          <ProjectTitle>{title}</ProjectTitle>
+          <ProjectDescription>
+            {description}
+          </ProjectDescription>
+        </ProjectHeading>
+        <ProjectGrid>
+          <DinamicGrid items={images.map(img => ({img}))} onClick={!isMobile && handleGalleryOpen}/>
+        </ProjectGrid>
       </PageWrapper>
     </>
   )

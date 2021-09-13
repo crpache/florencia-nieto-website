@@ -102,9 +102,12 @@ const H3 = styled.h3`
 `;
 
 const ButtonsWrapper = styled.div`
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   gap: 1rem;
+  @media (max-width: ${breakpoints.mobile}px) {
+    flex-direction: column;
+  }
 `;
 
 const Image = styled.img`

@@ -10,8 +10,7 @@ const FooterWrapper = styled.footer`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 20px;
-  height: 300px;
+  //padding-top: 20px;
   background: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.fontLight};
 
@@ -51,17 +50,13 @@ const FooterInfo = styled.div`
 `;
 
 const TextSection = styled.div`
-  padding: 0 10px;
+  padding: 20px 10px;
 `;
 
 const Footer = () => (
   <FooterWrapper>
     <TextSection>
-      <h3> Sígueme </h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet
-        blandit mi. Vestibulum pellentesque ex risus
-      </p>
+      <h3>Mis redes</h3>
       <SocialWrapper>
         <a
           href="https://www.instagram.com/florencianietointeriores"

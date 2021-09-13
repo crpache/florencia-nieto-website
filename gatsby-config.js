@@ -40,7 +40,7 @@ module.exports = {
         fonts: [
           `Bitter: 400, 700`,
           `Montserrat: 100, 500, 600`,
-
+          `Dosis: 100, 500, 600`,
         ],
         display: `swap`,
       },
@@ -95,6 +95,34 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: `./src/img/favicon2.png`,
+        // WebApp Manifest Configuration
+        appName: `Florencia Nieto diseñadora de arquitectura interior`, // Inferred with your package.json
+        appDescription: `Esta web muestra el trabajo profesional realizado por la diseñadora Florencia Nieto`,
+        developerName: 'southpress',
+        developerURL: null,
+        dir: 'auto',
+        lang: 'es',
+        display: 'standalone',
+        orientation: 'any',
+        start_url: '/',
+        version: '1.0',
+  
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          yandex: false,
+          windows: false
+        }
+      }
     },
     {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules

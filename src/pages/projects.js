@@ -4,11 +4,15 @@ import { graphql, useStaticQuery } from "gatsby"
 import DinamicGrid from "../components/DinamicGrid";
 import Title from "../components/Title";
 import Layout from "../components/Layout";
+import { breakpoints } from "../style/theme"
 
 const TitleWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+  @media (max-width: ${breakpoints.mobile}px) {
+    margin-top: 5rem;
+  }
 `;
 
 const GridWrapper = styled.div`

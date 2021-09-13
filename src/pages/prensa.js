@@ -7,6 +7,12 @@ import PageTitle from '../components/Title'
 
 const Title = styled.h2``;
 
+const Wrapper = styled.div`
+  @media (max-width: ${breakpoints.mobile}px) {
+    margin-top: 5rem;
+  }
+`
+
 const SectionWrapper = styled.section`
   box-sizing: border-box;
   padding: 2rem;
@@ -14,7 +20,11 @@ const SectionWrapper = styled.section`
   margin-bottom: 6rem;
 
   @media (max-width: ${breakpoints.mobile}px) {
-    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
   }
 `;
 
@@ -23,6 +33,13 @@ const IframesWrapper = styled.div`
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 2rem;
+  @media (max-width: ${breakpoints.mobile}px) {
+    //margin-top: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
 `;
 
 const Separator = styled.hr`
@@ -31,7 +48,9 @@ const Separator = styled.hr`
 
 const Prensa = () => (
   <Layout>
-    <PageTitle>Prensa</PageTitle>
+    <Wrapper>
+      <PageTitle>Prensa</PageTitle>
+    </Wrapper>
     <SectionWrapper>
       <Title> Webserie Sodimac | Interiorista seleccionada para el reality </Title>
       <IframesWrapper>

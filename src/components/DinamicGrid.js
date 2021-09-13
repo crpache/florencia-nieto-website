@@ -34,7 +34,7 @@ const Grid = styled.div`
   margin-bottom: 10px;
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 50vh);
+    grid-template-rows: ${props => `repeat(${props.images}, 50vh)`};
     grid-template-areas:
       "img0"
       "img1"
