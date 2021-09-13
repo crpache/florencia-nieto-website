@@ -50,7 +50,7 @@ const TextArea = styled.textarea`
 const ContactSection = () => (
   <FormWrapper id="contact-form">
     <Title>Contacto</Title>
-    <Form name="Contact Form" method="POST" data-netlify="true" /* data-netlify-recaptcha="true" */>
+    <Form name="Contact Form" method="POST" data-netlify="true" action='/src/pages/success.js' /* data-netlify-recaptcha="true" */>
       <input type="hidden" name="form-name" value="Contact Form" />
 
       <Input type="text" name="name" placeholder="Nombre *" autocomplete="off" required/>
