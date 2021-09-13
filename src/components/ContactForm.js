@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect }  from "react";
 import styled from "styled-components";
 import { breakpoints } from "../style/theme";
 import Title from "./Title";
@@ -50,7 +50,7 @@ const TextArea = styled.textarea`
 const ContactSection = () => (
   <FormWrapper id="contact-form">
     <Title>Contacto</Title>
-    <Form name="Contact Form" method="POST" data-netlify="true" action='/src/pages/success.js' /* data-netlify-recaptcha="true" */>
+    <Form name="Contact Form" method="POST" data-netlify="true" action='/success'/* data-netlify-recaptcha="true" */>
       <input type="hidden" name="form-name" value="Contact Form" />
 
       <Input type="text" name="name" placeholder="Nombre *" autocomplete="off" required/>
@@ -60,7 +60,7 @@ const ContactSection = () => (
       
       {/* <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} /> */}
 
-      <Button type="submit">Enviar</Button>
+      <Button type="submit" as='button'>Enviar</Button>
     </Form>
   </FormWrapper>
 );
