@@ -6,6 +6,7 @@ description: |-
   Asesoramiento: Casa en construcción - Acompañamiento durante las compras
   de revestimientos, selección de materiales, iluminación y mobiliario a medida.
 isLanding: true
+order: 10
 cover:
   - https://res.cloudinary.com/dgxp6vwij/image/upload/v1631111504/casaAdrogue/casaAdrogue-4_c2uynr.jpg
 imageGallery:
