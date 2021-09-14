@@ -5,6 +5,7 @@ date: 2019-07-15T20:24:28.294Z
 description: |
   Servicio Llave en mano: Diseño y decoración de un departamento de 2 ambientes.
 isLanding: true
+order: 2
 cover:
   - https://res.cloudinary.com/dgxp6vwij/image/upload/v1631208957/deptoSantaFe/deptoSantaFe-1_gqassd.jpg
 imageGallery:
