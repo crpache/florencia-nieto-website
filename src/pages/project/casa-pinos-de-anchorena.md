@@ -6,6 +6,7 @@ description: |-
   Servicio Llave en mano: Renovación de comedor - cocina - galería +
   diseño y decoración.
 isLanding: true
+order: 6
 cover:
   - https://res.cloudinary.com/dgxp6vwij/image/upload/v1631219064/casaPinosDeAnchorena/comedor/casaPinos-7_srn78l.jpg
 imageGallery:
