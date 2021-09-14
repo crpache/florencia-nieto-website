@@ -21,20 +21,23 @@ const GridWrapper = styled.div`
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
-    {
-      allMarkdownRemark {
-        nodes {
-          frontmatter {
-            title
-            cover
-          }
-          fields {
-            slug
+      {
+        allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}) {
+          nodes {
+            frontmatter {
+              cover
+              title
+              date
+            }
+            fields {
+              slug
+            }
           }
         }
       }
-    }
   `)
+
+  console.log(data)
 
   const projectsData = data.allMarkdownRemark.nodes.filter(project => project.frontmatter.cover)
 

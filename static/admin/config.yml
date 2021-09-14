@@ -40,6 +40,11 @@ collections:
           default: false,
         }
       - { 
+          label: "Orden en pagina principal", 
+          name: "order", 
+          widget: "number",
+        }
+      - { 
           label: "Imagen de portada", 
           name: 'cover', 
           widget: "image" 

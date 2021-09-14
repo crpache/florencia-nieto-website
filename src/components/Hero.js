@@ -11,7 +11,7 @@ const HeroWrapper = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   z-index: 0;
   background-image: url(${HeroImg});
   background-size: cover;
