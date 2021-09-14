@@ -6,6 +6,7 @@ description: |-
   Servicio Llave en mano: Diseño y decoración de un Home Office en una vieja
   habitación.
 isLanding: true
+order: 3
 cover:
   - https://res.cloudinary.com/dgxp6vwij/image/upload/v1631116405/homeOfficeMitre/homeOffice-5_eeorne.jpg
 imageGallery:
