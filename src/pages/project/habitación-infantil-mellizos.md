@@ -6,7 +6,7 @@ description: |-
   Servicio Llave en mano: Diseño y decoración de habitación infantil para
   mellizos.
 isLanding: true
-order: 8
+order: 5
 cover:
   - https://res.cloudinary.com/dgxp6vwij/image/upload/v1631217856/habInfantilMellizos/habInfantilMellis-11_endk3g.jpg
 imageGallery:
