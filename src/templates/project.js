@@ -3,8 +3,7 @@ import Layout from '../components/Layout'
 import styled from "styled-components"
 import { graphql } from "gatsby"
 import DinamicGrid from "../components/DinamicGrid"
-import NextIcon from '../icons/angle-right-solid.svg'
-import PrevIcon from '../icons/angle-left-solid.svg'
+import ImageGallery from "../components/ImageGallery"
 import { breakpoints } from "../style/theme"
 import { useWindowSize } from "../utils/useIsDesktop"
 
@@ -77,47 +76,6 @@ const Template = ({ title, description, images }) => {
     </>
   )
 }
-
-
-const GalleryWrapper = styled.section`
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgba(0,0,0,0.9);
-`
-const ImageGallery = ({ images, closeGallery, current = 0 }) => {
-  const [currentImg, setCurrentImg] = useState(current)
-  React.useEffect(() => setCurrentImg(current), [current])
-
-  const handleNextImg = (e) => {
-    e.stopPropagation()
-    if (currentImg !== images.length) {
-      setCurrentImg(currentImg + 1)
-    }
-  }
-
-  const handlePrevImg = (e) => {
-    e.stopPropagation()
-    if (currentImg !== 0) {
-      setCurrentImg(currentImg - 1)
-    }
-  }
-
-  return (
-    <GalleryWrapper onClick={closeGallery}>
-      <PrevIcon onClick={handlePrevImg} color="#FFF" height={50} />
-      <img height={700} src={images[currentImg]} />
-      <NextIcon onClick={handleNextImg} color="#FFF" height={50} />
-    </GalleryWrapper>
-  )
-} 
-
 
 const ProjectPage = ({ data }) => {
   const { markdownRemark } = data
