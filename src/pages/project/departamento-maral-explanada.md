@@ -8,6 +8,7 @@ description: >-
 
   Maral Explanada.
 isLanding: true
+order: 5
 cover:
   - https://res.cloudinary.com/dgxp6vwij/image/upload/v1631192816/deptoMaralExplanada/deptoMaralExplanada-3_tjl3wm.jpg
 imageGallery:
