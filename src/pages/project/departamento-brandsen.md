@@ -4,6 +4,7 @@ title: Departamento Brandsen
 date: 2020-01-28T16:53:43.951Z
 description: "Servicio Llave en mano: Diseño y decoración de departamento de dos ambientes."
 isLanding: true
+order: 12
 cover:
   - https://res.cloudinary.com/dgxp6vwij/image/upload/v1631128400/deptoBrandsen/deptoBrandsen-1_opinbb.jpg
 imageGallery:
