@@ -167,29 +167,11 @@ const OnlineProject = () => (
       <ColumnWrapper2>
         <H2> Proyectos online o presencial </H2>
         <p>
-          Se trata de proyectos 100% personalizados Diseño uno o varios
-          ambientes de tu casa a distancia, sin necesidad de reunirnos
-          presencialmente, ganando agilidad. Te entrego planos, presentación y
-          un catálogo con los productos que necesitás para que puedas ejecutarlo
-          a tu ritmo
+          ¡Mayor comodidad y dinamismo! Diseño uno o varios ambientes de tu casa a distancia, 
+          sin necesidad de reunirnos presencialmente. Te presentaré una idea, un catálogo de productos 
+          y un plano que te dará las herramientas para que puedas ejecutar el diseño a tu ritmo
         </p>
-        <H3> Qué recibirás: </H3>
-        <P> Planos 2D con distribución del mobiliario </P>
-        <ul>
-          <li>
-            Moodboard con paleta de colores, materialidad e imágenes de
-            referencia
-          </li>
-          <li> Catálogo con links de compras de: </li>
-          <ul>
-            <li> muebles </li>
-            <li> accesorios: plantas: alfombras, objetos decorativos </li>
-            <li> iluminación </li>
-            <li> pisos y revestimientos (si corresponde) </li>
-          </ul>
-        </ul>
-        <br></br>
-        <h3> Cómo funciona:</h3>
+        <h3>Cómo funciona:</h3>
         <Ul>
           <li>
             Escribime a&nbsp;
@@ -200,29 +182,43 @@ const OnlineProject = () => (
             >
               contacto@florencianietointeriores.com
             </a>
-            &nbsp;y coordinamos una reunión virtual por videollamada para que me
-            cuentes tus necesidades, presupuesto y gustos
+            &nbsp;y coordinamos una reunión por videollamada, para que me cuentes tus necesidades, presupuesto y gustos.
           </li>
-          <li> Necesito de tu parte: </li>
+          <li>Necesito de tu parte: </li>
           <SubUl>
-            <li> fotos y/o vídeos actuales,</li>
+            <li>Fotos y/o vídeos actuales de tu hogar,</li>
             <li>
               plano con medidas (con un boceto a mano alzada nos será
               suficiente),
             </li>
-            <li> imágenes de referencia o carpeta de Pinterest (opcional) </li>
+            <li>Imágenes de referencia, para ejemplificar tus gustos.</li>
           </SubUl>
           <li>Te paso el presupuesto y si estás de acuerdo avanzamos</li>
           <li>
-            ¡Manos a la obra! Me pondré a trabajar en tu proyecto y nos
-            mantendremos en contacto mediante reuniones intermedias para ir
-            mostrándote el avance y hacer modificaciones si fueran necesarias
+            Aceptado y definido todo ¡Comenzaré a trabajar! y nos mantendremos en contacto mediante 
+            reuniones intermedias para ir mostrándote el avance y hacer modificaciones si fueran necesarias.
           </li>
           <li>
-            Coordinamos una reunión por videollamada para presentarte la
-            propuesta final
+            Cuando esté todo listo, por videollamada, te presentaré la propuesta final
           </li>
         </Ul>
+        <H3>Qué recibirás:</H3>
+        <P>Planos 2D con distribución del mobiliario</P>
+        <ul>
+          <li>
+            Moodboard con paleta de colores, materialidad e imágenes de
+            referencia
+          </li>
+          <li> Catálogo con links de compras de: </li>
+          <ul>
+            <li> Muebles </li>
+            <li> Accesorios: plantas: alfombras, objetos decorativos </li>
+            <li> Iluminación </li>
+            <li> Pisos y revestimientos (si corresponde) </li>
+          </ul>
+        </ul>
+        <br></br>
+        
         <ButtonsWrapper>
           <Button to="/#contact-form">Contáctame</Button>
           <Button to="/#services">Más servicios</Button>

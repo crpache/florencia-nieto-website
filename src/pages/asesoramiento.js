@@ -189,30 +189,10 @@ const Advice = () => (
       <ColumnWrapper2>
         <H2> Asesoramiento </H2>
         <p>
-          Se trata de una reunión presencial o por videollamada en la cual
-          resuelvo todas tus dudas de él/los ambiente que quieras intervenir.
-          Este servicio puede serte útil si: Querés hacer vos misma/o un cambio
-          en tu casa pero no sabés qué te conviene hacer, qué colores usar, si
-          cambiar los muebles que tenés o simplemente hay que cambiar la
-          distribución, etc
-        </p>
-        <br></br>
-        <h3> Obtendrás una idea clara de: </h3>
-        <ul>
-          <li>Cuál es la mejor distribución para cada espacio,</li>
-          <li> Qué muebles necesitas agregar, modificar o descartar, </li>
-          <li>
-            Cuál es la paleta de colores ideal para resaltar las sensaciones que
-            quieras transmitir,
-          </li>
-          <li>
-            Cuáles son los objetos y accesorios adecuados para lograr un espacio
-            cohesivo, agradable y funcional
-          </li>
-        </ul>
-        <p>
-          Con estas herramientas, podrás llevar a cabo el nuevo diseño interior
-          de tu casa a tu ritmo y con tu presupuesto
+          Si querés hacer un cambio en tu hogar, pero no sabés por dónde empezar ¡Este servicio es ideal para vos!
+          Se trata de una reunión presencial o por videollamada en la cual resuelvo todas tus dudas de él/los ambiente/s 
+          que te gustaría intervenir. Te será útil si no tenés definido lo que querés hacer, qué te conviene, qué colores usar, 
+          si hay que cambiar los muebles existentes o simplemente modificar su distribución, etc.
         </p>
         <br></br>
         <h3> Cómo funciona:</h3>
@@ -226,28 +206,28 @@ const Advice = () => (
             >
               contacto@florencianietointeriores.com
             </a>
-            &nbsp;y coordinamos una reunión virtual por videollamada para que me
+            &nbsp;y coordinamos una reunión por videollamada para que me
             cuentes tus necesidades, presupuesto y gustos
           </li>
           <li> Necesito de tu parte: </li>
           <SubUl>
-            <li> que me cuentes qué quieres hacer, modificar o mejorar, </li>
-            <li>fotos y/o vídeos actuales,</li>
+            <li>Que me cuentes qué quieres hacer, modificar o mejorar, </li>
+            <li>Fotos y/o vídeos actuales de tu hogar.</li>
             <li>
-              planos con medidas (con un boceto a mano alzada será suficiente),
+              Planos con medidas (con un boceto a mano alzada será suficiente),
             </li>
-            <li> imágenes de referencia o carpeta de Pinterest (opcional) </li>
+            <li> Imágenes de referencia para ejemplificar tus gustos.</li>
           </SubUl>
           <li>Te paso el presupuesto y si estás de acuerdo avanzamos</li>
           <li>
-            Coordinamos la fecha y horario de la videollamada, en la cual te
-            expondré mis propuestas y tras la cual te entregaré:
+            Coordinamos la fecha y horario de la reunión presencial o videollamada, 
+            en la cual te contaré mis propuestas y te entregaré:
           </li>
           <LastSubUl>
-            <li> plano informativo a modo de croquis (si aplica), </li>
-            <li> imágenes de referencia de los elementos a incorporar. </li>
+            <li>Plano informativo a modo de croquis (si aplica), </li>
+            <li>Imágenes de referencia de los elementos a incorporar. </li>
           </LastSubUl>
-        </Ul>
+        </Ul>        
         <ButtonsWrapper>
           <Button to="/#contact-form">Contáctame</Button>
           <Button to="/#services">Más servicios</Button>

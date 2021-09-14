@@ -86,6 +86,9 @@ const Ul = styled.ul`
   li:nth-child(5)::marker {
     content: "🏡 ";
   }
+  li:nth-child(6)::marker {
+    content: "🔑 ";
+  }
 `;
 
 const H2 = styled.h2`
@@ -126,16 +129,7 @@ const keyOnHand = () => (
       </ColumnWrapper>
       <ColumnWrapper2>
         <H2> Diseño y Decoración Integral con llave en mano </H2>
-        <p>
-          Si quieres tener absolutamente todo resuelto, realizo un anteproyecto
-          con la idea general en la cual trabajamos en conjunto ya que es 100%
-          personalizado y una vez que tenemos todo definido realizo el proyecto
-          que es la dirección de obra, es llave en mano porque me ocupo de todo,
-          la gestión de compra del mobiliario y accesorios, los gremios que van
-          a hacer el trabajo asignado y todos los detalles para que no tengas
-          que preocuparte por nada y puedas tener el/los ambientes listos para
-          disfrutarlos.
-        </p>
+        <p>¡Me encargo de que absolutamente TODO quede resuelto!</p>
         <H3> Cómo funciona:</H3>
         <Ul>
           <li>
@@ -151,18 +145,20 @@ const keyOnHand = () => (
             presupuesto y gustos
           </li>
           <li>Te paso el presupuesto y si estas de acuerdo avanzamos</li>
+          <li>Realizo un ANTEPROYECTO con la idea general (en la cual trabajaremos en conjunto ya que es 100% personalizada).</li>
           <li>
-            Realizo un anteproyecto el cual lo vamos trabajando en conjunto
-            mediante varias reuniones para que podamos obtener el resultado
-            deseado
+            Una vez que tenemos todo definido y aceptado, pasamos al PROYECTO que
+            es la dirección de obra.
           </li>
           <li>
-            Una vez finalizado comenzamos con la etapa del proyecto en donde voy
-            a llevar a cabo todo lo definido en la etapa anterior
+            Se denomina “llave en mano” porque me ocupo de toda la gestión de compra
+            del mobiliario y accesorios, de coordinar a los gremios que van a hacer el trabajo 
+            asignado y todos los detalles para que no tengas que preocuparte por nada y puedas 
+            tener el/los ambientes listos para utilizarlos.
           </li>
           <li>
-            Me ocupo de todo y te “entrego” la llave de tu casa para que puedas
-            disfrutar del gran cambio que se convirtió en realidad.
+            Cuando terminamos te “entrego” la llave de tu casa para que puedas disfrutar de tu hogar 
+            y vivir el cambio que hicimos realidad.
           </li>
         </Ul>
         <ButtonsWrapper>

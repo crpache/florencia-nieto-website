@@ -43,6 +43,7 @@ collections:
           label: "Orden en pagina principal", 
           name: "order", 
           widget: "number",
+          required: false,
         }
       - { 
           label: "Imagen de portada", 
