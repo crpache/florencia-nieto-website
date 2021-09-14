@@ -1,7 +1,7 @@
 ---
 templateKey: project
 title: Departamento Brown
-date: 2021-09-07T20:23:25.909Z
+date: 2019-07-17T20:23:25.909Z
 description: "Servicio Llave en mano: Diseño y decoración monoambiente."
 isLanding: true
 order: 1
