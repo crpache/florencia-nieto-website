@@ -54,13 +54,15 @@ const Template = ({ title, description, images }) => {
   const [currentImg, setCurrentImg] = useState(0)
 
   const handleGalleryOpen = (currentImg = 0) => {
-    setGalleryOpen(true)
-    setCurrentImg(currentImg)
+    if (!isMobile) {
+      setGalleryOpen(true)
+      setCurrentImg(currentImg)
+    }
   }
 
   return (
     <>
-      {isGalleryOpen ? <ImageGallery images={images} currentImg={currentImg} closeGallery={() => setGalleryOpen(false)}/> : null}
+      {isGalleryOpen ? <ImageGallery images={images} current={currentImg} closeGallery={() => setGalleryOpen(false)}/> : null}
       <PageWrapper>
         <ProjectHeading>
           <ProjectTitle>{title}</ProjectTitle>
@@ -69,7 +71,7 @@ const Template = ({ title, description, images }) => {
           </ProjectDescription>
         </ProjectHeading>
         <ProjectGrid>
-          <DinamicGrid items={images.map(img => ({img}))} onClick={!isMobile && handleGalleryOpen}/>
+          <DinamicGrid items={images.map(img => ({img}))} onClick={handleGalleryOpen}/>
         </ProjectGrid>
       </PageWrapper>
     </>

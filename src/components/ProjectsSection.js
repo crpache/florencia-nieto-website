@@ -18,7 +18,7 @@ const TitleWrapper = styled.div`
 const ProjectsSection = () => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(filter: { frontmatter: { isLanding: { eq: true } } }) {
+      allMarkdownRemark(sort: {fields: frontmatter___order, order: ASC}, filter: {frontmatter: {isLanding: {eq: true}}}) {
         nodes {
           frontmatter {
             cover

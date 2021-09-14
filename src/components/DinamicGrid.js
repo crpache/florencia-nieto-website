@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
+import { breakpoints } from "../style/theme"
 import { v4 as id } from 'uuid'
 import _ from 'lodash'
 
@@ -56,6 +57,11 @@ const ImageWrapper = styled(Link)`
     filter: grayscale(100%);
     cursor: pointer;
   }
+  @media(max-width: ${breakpoints.mobile}px) {
+    :hover {
+      filter: none;
+    }
+  }
 `
 
 const Image = styled.img`
@@ -72,7 +78,7 @@ const DinamicGrid = ({ items = [], onClick = () => null }) => {
         <Grid images={group.length}>
           {group.map((project, index) => (
             <ImageWrapper to={project.slug} index={index} key={id()}>
-              <Image src={project.img} alt={project.title} onClick={onClick}/>
+              <Image src={project.img} alt={project.title} onClick={() => onClick(index)}/>
             </ImageWrapper>
           ))}
         </Grid>
