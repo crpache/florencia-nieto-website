@@ -4,6 +4,7 @@ title: Departamento Playa Grande
 date: 2017-11-06T20:34:18.812Z
 description: " Servicio Llave en mano: Renovación de living - comedor y diseño interior."
 isLanding: true
+order: 9
 cover:
   - https://res.cloudinary.com/dgxp6vwij/image/upload/v1631194001/deptoPlayaGrande/deptoPlayaGrande-10_v6lvnf.jpg
 imageGallery:
