@@ -9,6 +9,7 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
 `
 
 const TitleWrapper = styled.div`

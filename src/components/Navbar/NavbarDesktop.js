@@ -43,11 +43,13 @@ const NavbarDesktop = ({ items }) => {
 
   return (
     <NavbarWrapper id={navbarId}>
-      <img 
-        src={LogoImg}
-        height={100}
-        alt="logo"
-      />
+      <Link to='/'>
+        <img 
+          src={LogoImg}
+          height={100}
+          alt="logo"
+        />
+      </Link>
       {items.map(item => (
         <NavItem to={item.to} key={id()}>
           {item.label}
