@@ -4,6 +4,7 @@ title: Departamento Brown
 date: 2021-09-07T20:23:25.909Z
 description: "Servicio Llave en mano: Diseño y decoración monoambiente."
 isLanding: true
+order: 1
 cover:
   - https://res.cloudinary.com/dgxp6vwij/image/upload/v1631133909/deptoBrown/deptoBrown-38_dzrkeq.jpg
 imageGallery:
