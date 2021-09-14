@@ -11,6 +11,7 @@ const Wrapper = styled.section`
   flex-direction: column;
   height: 100%;
   flex: 1;
+  margin: 5rem 0;
   @media (max-width: ${breakpoints.mobile}px) {
     padding: 0 1rem;
   }
