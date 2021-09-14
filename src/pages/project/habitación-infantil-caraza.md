@@ -1,9 +1,10 @@
 ---
 templateKey: project
 title: Habitación infantil Caraza
-date: 2021-09-09T18:30:07.035Z
+date: 2019-09-09T03:00:00.000Z
 description: "Servicio Llave en mano: Diseño y decoración de habitación infantil."
 isLanding: true
+order: 8
 cover:
   - https://res.cloudinary.com/dgxp6vwij/image/upload/v1631211338/habInfantilCalaza/habCalaza-6_qpwphl.jpg
 imageGallery:
