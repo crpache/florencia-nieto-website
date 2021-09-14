@@ -4,6 +4,7 @@ title: Departamento XX de septiembre
 date: 2018-10-15T17:25:31.562Z
 description: "Servicio Llave en mano: Renovación de living - comedor y diseño interior."
 isLanding: true
+order: 11
 cover:
   - https://res.cloudinary.com/dgxp6vwij/image/upload/v1631194719/deptoXXSeptiempre/deptoXXSeptiembre-3_bncy65.jpg
 imageGallery:
