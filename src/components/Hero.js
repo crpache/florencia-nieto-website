@@ -59,7 +59,7 @@ const Logo = () => (
   <img 
     src={LogoImg}
     alt="logo"
-    height={300}
+    width='100%'
   />
 )
 
