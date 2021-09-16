@@ -28,6 +28,7 @@ const HeroTitle = styled.div`
   flex-direction: column;
   justify-content: end;
   margin-right: 200px;
+  margin-top: 30px;
   text-align: right;
   color: white;
 
