@@ -167,8 +167,7 @@ const OnlineProject = () => (
       <ColumnWrapper2>
         <H2> Proyectos online o presencial </H2>
         <p>
-          ¡Mayor comodidad y dinamismo! Diseño uno o varios ambientes de tu casa a distancia, 
-          sin necesidad de reunirnos presencialmente. Te presentaré una idea, un catálogo de productos 
+          ¡Mayor comodidad y dinamismo! Diseño uno o varios ambientes de tu casa. Te presentaré una idea, un catálogo de productos 
           y un plano que te dará las herramientas para que puedas ejecutar el diseño a tu ritmo
         </p>
         <h3>Cómo funciona:</h3>

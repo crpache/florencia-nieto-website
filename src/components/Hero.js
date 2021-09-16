@@ -9,13 +9,14 @@ import LogoImg from '../img/logo-mobile.png'
 const HeroWrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   height: 100vh;
   width: 100%;
   z-index: 0;
   background-image: url(${HeroImg});
   background-size: cover;
   @media (max-width: ${breakpoints.mobile}px) {
+    justify-content: center;
     background-image: url(${MobileImg});
     background-size: cover;
     top: 0;
@@ -25,29 +26,31 @@ const HeroWrapper = styled.div`
 const HeroTitle = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: end;
+  margin-right: 200px;
+  text-align: right;
   color: white;
 
   @media (max-width: ${breakpoints.mobile}px) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
     top: 0;
   }
 `;
 
-const TitleText = styled.h1`
-  color: ${({ theme }) => theme.colors.primary};
-  background-color: rgba(0,0,0,.5);
+const TitleText = styled.h2`
+  color: #444;
   padding: 5px 15px;
   margin: 5px;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 100;
   letter-spacing: 4px;
 `
 
 const SubtitleText = styled.h2`
-  color: ${({ theme }) => theme.colors.primary};
-  background-color: rgba(0,0,0,.5);
+  color: #444;
   margin: 5px;
   padding: 5px 15px;
   font-size: 30px;
@@ -68,8 +71,9 @@ const Hero = () => {
   const { width } = useWindowSize();
   const Content = width > breakpoints.mobile ? (
     <>
-    <TitleText> Florencia Nieto </TitleText>
-    <SubtitleText> Diseño en arquitectura interior </SubtitleText>
+    <TitleText>"Las tendencias desaparecen,</TitleText>
+    <TitleText style={{ marginRight: '70px' }}>el estilo es eterno"</TitleText>
+    <SubtitleText style={{ marginRight: '140px' }}>Yves Saint Laurent</SubtitleText>
     </>
   ) : <Logo />
 

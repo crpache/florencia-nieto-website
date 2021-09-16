@@ -93,11 +93,11 @@ const ServicesSection = () => {
         <Card>
           <CardHeading>
             <OnlineIcon height={50} />
-            <h3>Proyectos online (o presencial)</h3>
+            <h3>Proyectos online o presencial</h3>
           </CardHeading>
           <P>
             ¡Mayor comodidad y dinamismo! Diseño uno o varios ambientes de tu
-            casa a distancia. Te voy a brindar las herramientas necesarias para
+            casa. Te voy a brindar las herramientas necesarias para
             que puedas ejecutar el diseño a tu ritmo y tengas el hogar que
             siempre soñaste.
           </P>
