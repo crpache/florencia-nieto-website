@@ -4,6 +4,7 @@ import { theme } from '../style/theme'
 import Navbar from './Navbar/Navbar';
 import { breakpoints } from '../style/theme';
 import Footer from './Footer'
+import { Helmet } from 'react-helmet';
 
 const GlobalStyles = createGlobalStyle`
   // @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&display=swap');
@@ -50,6 +51,9 @@ const Main = styled.main`
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
+    <Helmet>
+      <title>Florencia Nieto Interiores</title>
+    </Helmet>
     <LayoutWrapper>
       <GlobalStyles />
       <Navbar />
