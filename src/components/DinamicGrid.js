@@ -79,7 +79,9 @@ const DinamicGrid = ({ items = [], onClick = () => null }) => {
         <Grid images={group.length}>
           {group.map((project, index) => (
             <ImageWrapper to={project.slug} index={index} key={id()}>
-              <Image src={project.img} alt={project.title} onClick={() => onClick(index)}/>
+              <Image src={project.img} alt={project.title} onClick={() => {
+                onClick(project.index)
+              }}/>
             </ImageWrapper>
           ))}
         </Grid>

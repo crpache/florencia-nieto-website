@@ -37,8 +37,6 @@ const Projects = () => {
       }
   `)
 
-  console.log(data)
-
   const projectsData = data.allMarkdownRemark.nodes.filter(project => project.frontmatter.cover)
 
   const projects = projectsData.map(project => ({

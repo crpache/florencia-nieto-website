@@ -49,7 +49,7 @@ const ImageGallery = ({ images, closeGallery, current = 0 }) => {
   return (
     <GalleryWrapper onClick={closeGallery}>
       <PrevIcon onClick={handlePrevImg} color="#FFF" height={50} cursor='pointer' visibility={hidePrevIcon && 'hidden'}/>
-      <img height={700} src={images[currentImg]} alt='project'/>
+      <img height={700} src={images && images[currentImg]?.img} alt='project'/>
       <NextIcon onClick={handleNextImg} color="#FFF" height={50} cursor='pointer' visibility={hideNextIcon && 'hidden'}/>
     </GalleryWrapper>
   )

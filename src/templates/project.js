@@ -47,6 +47,7 @@ const ProjectGrid = styled.div`
 `
 
 const Template = ({ title, description, images }) => {
+  const imagesObjects = images.map((img, index) => ({index, img}))
   const { width } = useWindowSize();
   const isMobile = width <= breakpoints.mobile
   const [isGalleryOpen, setGalleryOpen] = useState(false)
@@ -61,7 +62,7 @@ const Template = ({ title, description, images }) => {
 
   return (
     <>
-      {isGalleryOpen ? <ImageGallery images={images} current={currentImg} closeGallery={() => setGalleryOpen(false)}/> : null}
+      {isGalleryOpen ? <ImageGallery images={imagesObjects} current={currentImg} closeGallery={() => setGalleryOpen(false)}/> : null}
       <PageWrapper>
         <ProjectHeading>
           <ProjectTitle>{title}</ProjectTitle>
@@ -70,7 +71,7 @@ const Template = ({ title, description, images }) => {
           </ProjectDescription>
         </ProjectHeading>
         <ProjectGrid>
-          <DinamicGrid items={images.map(img => ({img}))} onClick={handleGalleryOpen}/>
+          <DinamicGrid items={imagesObjects} onClick={handleGalleryOpen}/>
         </ProjectGrid>
       </PageWrapper>
     </>
