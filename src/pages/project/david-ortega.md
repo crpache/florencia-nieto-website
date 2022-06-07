@@ -4,7 +4,7 @@ title: David Ortega
 date: 2021-07-09T20:07:54.704Z
 description: "Proyecto Llave en Mano: rediseño del living, comedor y cocina."
 isLanding: true
-order: 11
+order: -1
 cover:
   - https://res.cloudinary.com/dgxp6vwij/image/upload/v1654632845/David%20Ortega/DSC_9637_otswvk.jpg
 imageGallery:
