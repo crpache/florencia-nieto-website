@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { breakpoints } from "../style/theme";
-import Title from "./Title";
-import Button from "./Button";
+import React from 'react';
+import styled from 'styled-components';
+import { breakpoints } from '../style/theme';
+import Title from './Title';
+import Button from './Button';
 //import ReCAPTCHA from "react-google-recaptcha";
 
 const FormWrapper = styled.section`
@@ -48,19 +48,43 @@ const TextArea = styled.textarea`
 `;
 
 const ContactSection = () => (
-  <FormWrapper id="contact-form">
+  <FormWrapper id='contact-form'>
     <Title>Contacto</Title>
-    <Form name="Contact Form" method="POST" data-netlify="true" action='/success'/* data-netlify-recaptcha="true" */>
-      <input type="hidden" name="form-name" value="Contact Form" />
+    <Form
+      name='Contact Form'
+      method='POST'
+      data-netlify='true'
+      action='/success' /* data-netlify-recaptcha="true" */
+    >
+      <input type='hidden' name='form-name' value='Contact Form' />
 
-      <Input type="text" name="name" placeholder="Nombre *" autocomplete="off" required/>
-      <Input type="email" name="email" placeholder="Email *" autocomplete="off" required/>
-      <Input type="text" name="phone" placeholder="Telefono" autocomplete="off"/>
-      <TextArea name="mensaje" placeholder="Mensaje *" rows="4" required/>
-      
+      <Input
+        type='text'
+        name='name'
+        placeholder='Nombre *'
+        autocomplete='off'
+        required
+      />
+      <Input
+        type='email'
+        name='email'
+        placeholder='Email *'
+        autocomplete='off'
+        required
+      />
+      <Input
+        type='text'
+        name='phone'
+        placeholder='Telefono'
+        autocomplete='off'
+      />
+      <TextArea name='mensaje' placeholder='Mensaje *' rows='4' required />
+
       {/* <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} /> */}
 
-      <Button type="submit" as='button'>Enviar</Button>
+      <Button disabled type='submit' as='button'>
+        Enviar
+      </Button>
     </Form>
   </FormWrapper>
 );
