@@ -3,7 +3,7 @@ templateKey: project
 title: Almafuerte
 date: 2021-08-02T20:24:42.127Z
 description: "Proyecto Llave en Mano: diseño del living comedor y habitación principal."
-isLanding: true
+isLanding: false
 cover:
   - https://res.cloudinary.com/dgxp6vwij/image/upload/v1654633708/Almafuerte/DSC_0038_zapujw.jpg
 imageGallery:
