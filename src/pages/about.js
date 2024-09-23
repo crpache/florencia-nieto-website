@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import { breakpoints } from "../style/theme";
-import SpainIcon from "../icons/espana.svg";
-import UsaIcon from "../icons/estados-unidos.svg";
+// import SpainIcon from "../icons/espana.svg";
+// import UsaIcon from "../icons/estados-unidos.svg";
 import aboutImg from '../img/sobreMi.jpg'
 import Button from "../components/Button";
 
@@ -78,13 +78,13 @@ const About = () => (
       <ColumnWrapper>
         <Image
           src={aboutImg}
-          alt="foto sobre mi"
+          alt="Profile photo"
         />
       </ColumnWrapper>
       <ColumnWrapper2>
-        <H1>Sobre mi</H1>
+        <H1>About me</H1>
         <div>
-          <SpainIcon fill="#ccc" height={25} />
+          {/* <SpainIcon fill="#ccc" height={25} />
           <p>
             Diseñadora de interiores y decoradora, creciendo continuamente y
             enfrentando nuevos desafíos. Transformo los espacios para que sean
@@ -93,20 +93,24 @@ const About = () => (
             reformas integrales, restauración y decoración en viviendas
             particulares, oficinas y locales comerciales.
           </p>
-          <br></br>
-          <UsaIcon fill="#ccc" height={25} />
+          <br></br> */}
+          {/* <UsaIcon fill="#ccc" height={25} /> */}
           <p>
-            Interior designer and decorator. Eager to face new challenges and
-            keep on growing in my career. I transform spaces to make them
-            functional. I try to match the owners personality to their own home,
-            so as to make them feel part of it. I specialized in interior
-            design, comprehensive reforms, restoration and decoration of private
-            homes, offices and shops.
+            Originally from Argentina and currently a resident of New Zealand, I hold a Diploma in Interior Design and a Master of Applied Management. Since 2015, I have been dedicated to interior design, specialising in turnkey solutions, online and in-person consultations.
+          </p>
+          <p>
+          My expertise includes comprehensive renovations and the decoration of residential, office, and retail environments. I excel at enhancing functionality and achieving project goals, whether reflecting homeowners' personal styles or meeting commercial branding needs.
+          </p>
+          <p>
+          I possess a strong ability to understand and interpret clients' needs, even when they are unsure of their requirements. My approach involves attentive listening and delivering creative solutions that exceed expectations and effectively transform their environments.
+          </p>
+          <p>
+          My design philosophy focuses on creating visually appealing and functional interiors. I tailor each project to individual needs and preferences, balancing creativity with practicality. Attention to detail and collaborative teamwork are fundamental to achieving outstanding results.
           </p>
         </div>
         <ButtonsWrapper>
-          <Button to="/#contact-form">Contáctame</Button>
-          <Button to="/">Volver</Button>
+          <Button to="/">Portfolio</Button>
+          <Button to="/">CV</Button>
         </ButtonsWrapper>
       </ColumnWrapper2>
     </AboutWrapper>

@@ -49,7 +49,7 @@ const TextArea = styled.textarea`
 
 const ContactSection = () => (
   <FormWrapper id='contact-form'>
-    <Title>Contacto</Title>
+    <Title>Contact</Title>
     <Form
       name='Contact Form'
       method='POST'
@@ -61,7 +61,7 @@ const ContactSection = () => (
       <Input
         type='text'
         name='name'
-        placeholder='Nombre *'
+        placeholder='Name *'
         autocomplete='off'
         required
       />
@@ -75,15 +75,15 @@ const ContactSection = () => (
       <Input
         type='text'
         name='phone'
-        placeholder='Telefono'
+        placeholder='Phone'
         autocomplete='off'
       />
-      <TextArea name='mensaje' placeholder='Mensaje *' rows='4' required />
+      <TextArea name='mensaje' placeholder='Message *' rows='4' required />
 
       {/* <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} /> */}
 
       <Button disabled type='submit' as='button'>
-        Enviar
+        Send
       </Button>
     </Form>
   </FormWrapper>

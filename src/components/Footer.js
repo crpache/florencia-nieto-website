@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import InstagramIcon from "../icons/instagram-brands.svg";
-import FacebookIcon from "../icons/facebook-square-brands.svg";
+// import FacebookIcon from "../icons/facebook-square-brands.svg";
 import HouzzIcon from "../icons/houzz-brands.svg";
 import LinkedInIcon from "../icons/linkedin-brands.svg";
 import EnvelopIcon from "../icons/envelope-regular.svg";
@@ -56,7 +56,7 @@ const TextSection = styled.div`
 const Footer = () => (
   <FooterWrapper>
     <TextSection>
-      <h3>Mis redes</h3>
+      <h3>Social Media</h3>
       <SocialWrapper>
         <a
           href="https://www.instagram.com/florencianietointeriores"
@@ -65,13 +65,13 @@ const Footer = () => (
         >
           <InstagramIcon fill="#ccc" height={25} />
         </a>
-        <a
+        {/* <a
           href="https://www.facebook.com/florencianieto8/"
           target="_blank"
           rel="noreferrer"
         >
           <FacebookIcon fill="#ccc" height={25} />
-        </a>
+        </a> */}
         <a
           href="https://www.houzz.com/professionals/interior-designers-and-decorators/florencia-nieto-interiores-pfvwus-pf~1386239010"
           target="_blank"
@@ -87,7 +87,7 @@ const Footer = () => (
           <LinkedInIcon fill="#ccc" height={25} />
         </a>
         <a
-          href="mailto:contacto@florencianietointeriores.com"
+          href="mailto:florencianieto87@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
@@ -97,13 +97,13 @@ const Footer = () => (
     </TextSection>
     <FooterInfo>
       <p>
-        © 2021 -
+        © 2024 -
         <A
-          href="mailto:southpress.io@gmail.com"
+          href="mailto:olivamati@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
-          SouthPress
+          Matias Oliva
         </A>
       </p>
     </FooterInfo>

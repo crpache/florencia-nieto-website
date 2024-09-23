@@ -52,7 +52,7 @@ const Main = styled.main`
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <Helmet>
-      <title>Florencia Nieto Interiores</title>
+      <title>Florencia Nieto Interior Designer</title>
       <meta name="facebook-domain-verification" content="e1jzmy8x96j0l47yp5xsh01gkxv60w" />
     </Helmet>
     <LayoutWrapper>

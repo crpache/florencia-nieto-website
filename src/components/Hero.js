@@ -72,8 +72,8 @@ const Hero = () => {
   const { width } = useWindowSize();
   const Content = width > breakpoints.mobile ? (
     <>
-    <TitleText>"Las tendencias desaparecen,</TitleText>
-    <TitleText style={{ marginRight: '70px' }}>el estilo es eterno"</TitleText>
+    <TitleText>"Fashions fade,</TitleText>
+    <TitleText style={{ marginRight: '70px' }}>style is eternal"</TitleText>
     <SubtitleText style={{ marginRight: '140px' }}>Yves Saint Laurent</SubtitleText>
     </>
   ) : <Logo />

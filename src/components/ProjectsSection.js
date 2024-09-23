@@ -42,10 +42,10 @@ const ProjectsSection = () => {
   return (
     <Section id='#projects'>
       <TitleWrapper>
-        <Title>Proyectos</Title>
+        <Title>Projects</Title>
       </TitleWrapper>
       <DinamicGrid items={items} />
-      <Button to='projects' size='l'>Ver más</Button>
+      <Button to='projects' size='l'>More</Button>
     </Section>
   );
 };

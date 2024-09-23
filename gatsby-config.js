@@ -1,31 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: 'Flor Nieto Website',
-    description: 'Flor Nieto Interior Design Website',
-    author: "southpress",
+    title: 'Florencia Nieto Interior Designer',
+    description: 'Florencia Nieto Interior Designer | Portfolio',
+    author: "Matias Oliva",
     navbarLinks: [
       {
         label: 'Home',
         to: '/'
       },
       {
-        label: 'Proyectos',
+        label: 'Projects',
         to: '/#projects'
       },
+      // {
+      //   label: 'Servicios',
+      //   to: '/#services'
+      // },
+      // {
+      //   label: 'Prensa',
+      //   to: '/prensa'
+      // },
+      // {
+      //   label: 'Contacto',
+      //   to: '/#contact-form'
+      // },
       {
-        label: 'Servicios',
-        to: '/#services'
-      },
-      {
-        label: 'Prensa',
-        to: '/prensa'
-      },
-      {
-        label: 'Contacto',
-        to: '/#contact-form'
-      },
-      {
-        label: 'Sobre mi',
+        label: 'About',
         to: '/about'
       }
     ]
@@ -101,12 +101,12 @@ module.exports = {
       options: {
         logo: `./src/img/favicon2.png`,
         // WebApp Manifest Configuration
-        appName: `Florencia Nieto diseñadora de arquitectura interior`, // Inferred with your package.json
-        appDescription: `Esta web muestra el trabajo profesional realizado por la diseñadora Florencia Nieto`,
+        appName: `Florencia Nieto Interior Designer`, // Inferred with your package.json
+        appDescription: `Florencia Nieto Interior Designer Portfolio`,
         developerName: 'southpress',
         developerURL: null,
         dir: 'auto',
-        lang: 'es',
+        lang: 'en',
         display: 'standalone',
         orientation: 'any',
         start_url: '/',
