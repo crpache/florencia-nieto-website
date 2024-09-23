@@ -20,12 +20,16 @@ const Button = styled(Link)`
   font-size: ${({size = sizes.m}) => sizes[size]};
   border-radius: 5px;
   margin-top: 2rem;
+  margin-bottom: 3rem;
   border: 1px solid black;
   padding: 1rem 2rem;
   text-decoration: none;
   &:hover {
     background: black;
     color: white;
+  }
+  &:hover svg {
+    fill: white;
   }
 `;
 
