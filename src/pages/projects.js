@@ -48,7 +48,7 @@ const Projects = () => {
   return (
     <Layout>
       <TitleWrapper>
-        <Title> Proyectos </Title>
+        <Title> Projects</Title>
       </TitleWrapper>
       <GridWrapper>
         <DinamicGrid items={projects}/>
