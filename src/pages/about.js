@@ -7,7 +7,7 @@ import { breakpoints } from "../style/theme";
 import aboutImg from '../img/sobreMi.jpg'
 import Button from "../components/Button";
 
-import DownloadIcon from '../icons/DownloadIcon';
+import DownloadIcon from '../icons/download.svg';
 
 const AboutWrapper = styled.section`
   box-sizing: border-box;
